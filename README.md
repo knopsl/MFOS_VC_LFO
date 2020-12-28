@@ -11,4 +11,4 @@ This mod has been tested on breadboard. I have not yet built the module with the
 A Kosmo format front panel is also provided. It includes attenuator pots for the FM 1 and PWM control voltages. Width is 10 cm.
 
 ![Auxiliary PCB](Docs/MFOS_VCLFO_aux.png  "Auxiliary PCB")
-
+![Kosmo front panel](/home/rsholmes/Documents/Hobbies/Music/Instruments/synths/MFOS/VC LFO/Hardware/Panel/mfos_vclfo_panel.png  "Kosmo front panel")
