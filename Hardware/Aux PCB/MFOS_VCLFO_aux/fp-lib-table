@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ao_tht)(type KiCad)(uri ${KIPRJMOD}/ao_tht.pretty)(options "")(descr ""))
+  (lib (name MFOS_VCLFO_aux)(type KiCad)(uri ${KIPRJMOD}/MFOS_VCLFO_aux.pretty)(options "")(descr ""))
+)
