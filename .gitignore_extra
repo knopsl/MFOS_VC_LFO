@@ -1,14 +1,3 @@
-fp-info-cache
-*bak
-*cache*
-Narrow
-*~
-*.bck
-*.zip
-*.DS_Store
-*~
-.gitignore-extra
-*.svg
 mfos_vclfo_nosync_panel_art.kicad_mod
 mfos_vclfo_nosync_panel_holes.kicad_mod
 mfos_vclfo_nosync-panel.kicad_pcb

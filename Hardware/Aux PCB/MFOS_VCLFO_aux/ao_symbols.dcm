@@ -1,0 +1,31 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2_pin_Molex_connector
+D 2 pin Molex connector 2.54 mm spacing
+K connector
+F ~
+$ENDCMP
+#
+$CMP 2_pin_Molex_header
+D 2 pin Molex header 2.54 mm spacing
+K connector
+F ~
+$ENDCMP
+#
+$CMP 3_pin_Molex_connector
+D 3 pin Molex connector 2.54 mm spacing
+K connector
+F ~
+$ENDCMP
+#
+$CMP 3_pin_Molex_header
+D 3 pin Molex header 2.54 mm spacing
+K connector
+F ~
+$ENDCMP
+#
+$CMP Synth_power_2x5
+D 2x5 pin shrouded header 2.54 mm spacing
+$ENDCMP
+#
+#End Doc Library
