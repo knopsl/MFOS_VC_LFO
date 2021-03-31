@@ -173,13 +173,17 @@ $EndComp
 Connection ~ 3600 5800
 Connection ~ 3600 5400
 $Comp
-L Connector:Screw_Terminal_01x03 J2
+L ao_symbols:Screw_Terminal_01x03 J2
 U 1 1 5F836BF8
 P 6800 5550
 F 0 "J2" H 6880 5592 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 6880 5501 50  0000 L CNN
 F 2 "ao_tht:TerminalBlock_Degson_DG301_1x03_P5.00mm_Vertical" H 6800 5550 50  0001 C CNN
 F 3 "~" H 6800 5550 50  0001 C CNN
+F 4 "Tayda" H 6800 5550 50  0001 C CNN "Vendor"
+F 5 "A-669" H 6800 5550 50  0001 C CNN "SKU"
+F 6 "Degson" H 6800 5550 50  0001 C CNN "Manufacturer"
+F 7 "DG301" H 6800 5550 50  0001 C CNN "Part"
 	1    6800 5550
 	1    0    0    -1  
 $EndComp
@@ -221,11 +225,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 5400 4150 5400
 Wire Wire Line
-	4450 5400 4850 5400
-Wire Wire Line
 	3600 5800 4150 5800
-Wire Wire Line
-	4450 5800 4850 5800
 $Comp
 L Device:C C4
 U 1 1 5FD22D28
@@ -553,12 +553,10 @@ Wire Wire Line
 	7250 2500 7250 3200
 Text Notes 8800 4250 0    50   ~ 0
 (on panel)
-Text Notes 9100 2400 0    50   ~ 0
-(to U2-A pin 2 on MFOS board)
 Text Notes 9100 2500 0    50   ~ 0
 (to U2-A pin 1 on MFOS board)
 $Comp
-L Connector_Generic:Conn_01x02 J7
+L ao_symbols:2_pin_Molex_header J7
 U 1 1 5FD55FB4
 P 3150 2700
 F 0 "J7" H 3068 2375 50  0000 C CNN
@@ -584,7 +582,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 2700 3450 2800
 $Comp
-L Connector_Generic:Conn_01x02 J6
+L ao_symbols:2_pin_Molex_connector J6
 U 1 1 5FD582D5
 P 2450 3500
 F 0 "J6" H 2368 3175 50  0000 C CNN
@@ -617,7 +615,7 @@ Wire Wire Line
 	1900 3500 2250 3500
 Connection ~ 1900 3500
 $Comp
-L Connector_Generic:Conn_01x03 J8
+L ao_symbols:3_pin_Molex_header J8
 U 1 1 5FD6AD09
 P 7200 3900
 F 0 "J8" H 7150 4250 50  0000 L CNN
@@ -630,7 +628,7 @@ $EndComp
 Wire Wire Line
 	6450 3900 7000 3900
 $Comp
-L Connector_Generic:Conn_01x03 J9
+L ao_symbols:3_pin_Molex_connector J9
 U 1 1 5FD7730F
 P 8300 3900
 F 0 "J9" H 8250 4250 50  0000 L CNN
@@ -661,7 +659,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 4000 9150 4000
 $Comp
-L Connector_Generic:Conn_01x02 J3
+L ao_symbols:2_pin_Molex_header J3
 U 1 1 5FD7E947
 P 7950 2400
 F 0 "J3" H 7868 2075 50  0000 C CNN
@@ -672,7 +670,7 @@ F 3 "~" H 7950 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J4
+L ao_symbols:2_pin_Molex_connector J4
 U 1 1 5FD7E961
 P 8700 2400
 F 0 "J4" H 8618 2075 50  0000 C CNN
@@ -683,9 +681,9 @@ F 3 "~" H 8700 2400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9300 2400 8900 2400
+	9100 2400 8900 2400
 Wire Wire Line
-	8900 2500 9300 2500
+	8900 2500 9100 2500
 Text Notes 5150 6300 0    50   ~ 0
 Note: Omit C2, C6 on MFOS board
 Text Notes 7900 5600 0    50   ~ 0
@@ -767,4 +765,60 @@ Wire Wire Line
 	4100 2600 4650 2600
 Wire Wire Line
 	4400 2800 4650 2800
+Text Notes 9100 2400 0    50   ~ 0
+(to U2-A pin 2 on MFOS board)
+NoConn ~ 9100 2400
+NoConn ~ 9100 2500
+Wire Wire Line
+	4450 5400 4850 5400
+Wire Wire Line
+	4450 5800 4850 5800
+$Comp
+L ao_symbols:MountingHole H1
+U 1 1 6065F4B3
+P 1100 6700
+F 0 "H1" H 1200 6746 50  0000 L CNN
+F 1 "MountingHole" H 1200 6655 50  0000 L CNN
+F 2 "ao_tht:MountingHole_3.2mm_M3" H 1100 6700 50  0001 C CNN
+F 3 "" H 1100 6700 50  0001 C CNN
+F 4 "DNF" H 1100 6700 50  0001 C CNN "Config"
+	1    1100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_symbols:MountingHole H2
+U 1 1 6065F52C
+P 1100 6950
+F 0 "H2" H 1200 6996 50  0000 L CNN
+F 1 "MountingHole" H 1200 6905 50  0000 L CNN
+F 2 "ao_tht:MountingHole_3.2mm_M3" H 1100 6950 50  0001 C CNN
+F 3 "" H 1100 6950 50  0001 C CNN
+F 4 "DNF" H 1100 6950 50  0001 C CNN "Config"
+	1    1100 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_symbols:Graphic GRAF1
+U 1 1 6065FB63
+P 1100 7350
+F 0 "GRAF1" H 1378 7396 50  0000 L CNN
+F 1 "Graphic" H 1378 7305 50  0000 L CNN
+F 2 "ao_tht:analogoutput_12mm" H 1100 7350 50  0001 C CNN
+F 3 "" H 1100 7350 50  0001 C CNN
+F 4 "DNF" H 1100 7350 50  0001 C CNN "Config"
+	1    1100 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_symbols:Graphic GRAF2
+U 1 1 6065FBDC
+P 1100 7700
+F 0 "GRAF2" H 1378 7746 50  0000 L CNN
+F 1 "Graphic" H 1378 7655 50  0000 L CNN
+F 2 "ao_tht:OSHW-Logo2_7.3x6mm_SilkScreen" H 1100 7700 50  0001 C CNN
+F 3 "" H 1100 7700 50  0001 C CNN
+F 4 "DNF" H 1100 7700 50  0001 C CNN "Config"
+	1    1100 7700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

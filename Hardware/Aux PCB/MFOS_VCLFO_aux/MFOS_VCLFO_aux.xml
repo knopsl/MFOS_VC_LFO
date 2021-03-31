@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/rsholmes/Documents/Hobbies/Music/Instruments/Synths/MFOS/VC LFO/Hardware/Aux PCB/MFOS_VCLFO_aux/MFOS_VCLFO_aux.sch</source>
-    <date>Sat 13 Feb 2021 12:40:22 PM EST</date>
+    <source>/home/rsholmes/Documents/Hobbies/Music/Instruments/Synths/MFOS/VC LFO/Sync mod/Hardware/Aux PCB/MFOS_VCLFO_aux/MFOS_VCLFO_aux.sch</source>
+    <date>Wed 31 Mar 2021 05:28:39 PM EDT</date>
     <tool>Eeschema 5.1.9-73d0e3b20d~88~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -54,7 +54,7 @@
     <comp ref="J1">
       <value>Synth_power_2x5</value>
       <footprint>ao_tht:Power_Header</footprint>
-      <libsource lib="ao_symbols" part="Synth_power_2x5" description=""/>
+      <libsource lib="ao_symbols" part="Synth_power_2x5" description="2x5 pin shrouded header 2.54 mm spacing"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F73591B</tstamp>
     </comp>
@@ -62,21 +62,19 @@
       <value>Screw_Terminal_01x03</value>
       <footprint>ao_tht:TerminalBlock_Degson_DG301_1x03_P5.00mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector" part="Screw_Terminal_01x03" description="Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <fields>
+        <field name="Manufacturer">Degson</field>
+        <field name="Part">DG301</field>
+        <field name="SKU">A-669</field>
+        <field name="Vendor">Tayda</field>
+      </fields>
+      <libsource lib="ao_symbols" part="Screw_Terminal_01x03" description="Screw terminal, single row, 01x03"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F836BF8</tstamp>
     </comp>
-    <comp ref="U1">
-      <value>TL071</value>
-      <footprint>ao_tht:DIP-8_W7.62mm_Socket_LongPads</footprint>
-      <datasheet>http://www.ti.com/lit/ds/symlink/tl071.pdf</datasheet>
-      <libsource lib="Amplifier_Operational" part="TL071" description="Single Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FD21ACB</tstamp>
-    </comp>
     <comp ref="C4">
       <value>1nF</value>
-      <footprint>ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <footprint>ao_tht:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -182,7 +180,7 @@
       <value>2 pin Molex header</value>
       <footprint>ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="ao_symbols" part="2_pin_Molex_header" description="2 pin Molex header 2.54 mm spacing"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FD55FB4</tstamp>
     </comp>
@@ -190,7 +188,7 @@
       <value>2 pin Molex connector</value>
       <footprint>ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="ao_symbols" part="2_pin_Molex_connector" description="2 pin Molex connector 2.54 mm spacing"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FD582D5</tstamp>
     </comp>
@@ -206,7 +204,7 @@
       <value>3 pin Molex header</value>
       <footprint>ao_tht:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="ao_symbols" part="3_pin_Molex_header" description="3 pin Molex header 2.54 mm spacing"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FD6AD09</tstamp>
     </comp>
@@ -214,7 +212,7 @@
       <value>3 pin Molex connector</value>
       <footprint>ao_tht:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="ao_symbols" part="3_pin_Molex_connector" description="3 pin Molex connector 2.54 mm spacing"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FD7730F</tstamp>
     </comp>
@@ -222,7 +220,7 @@
       <value>2 pin Molex header</value>
       <footprint>ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="ao_symbols" part="2_pin_Molex_header" description="2 pin Molex header 2.54 mm spacing"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FD7E947</tstamp>
     </comp>
@@ -230,9 +228,57 @@
       <value>2 pin Molex connector</value>
       <footprint>ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="ao_symbols" part="2_pin_Molex_connector" description="2 pin Molex connector 2.54 mm spacing"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FD7E961</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TL071</value>
+      <footprint>ao_tht:DIP-8_W7.62mm_Socket_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tl071.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="TL071" description="Single Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD21ACB</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>ao_tht:MountingHole_3.2mm_M3</footprint>
+      <fields>
+        <field name="Config">DNF</field>
+      </fields>
+      <libsource lib="ao_symbols" part="MountingHole" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6065F4B3</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>ao_tht:MountingHole_3.2mm_M3</footprint>
+      <fields>
+        <field name="Config">DNF</field>
+      </fields>
+      <libsource lib="ao_symbols" part="MountingHole" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6065F52C</tstamp>
+    </comp>
+    <comp ref="GRAF1">
+      <value>Graphic</value>
+      <footprint>ao_tht:analogoutput_12mm</footprint>
+      <fields>
+        <field name="Config">DNF</field>
+      </fields>
+      <libsource lib="ao_symbols" part="Graphic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6065FB63</tstamp>
+    </comp>
+    <comp ref="GRAF2">
+      <value>Graphic</value>
+      <footprint>ao_tht:OSHW-Logo2_7.3x6mm_SilkScreen</footprint>
+      <fields>
+        <field name="Config">DNF</field>
+      </fields>
+      <libsource lib="ao_symbols" part="Graphic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6065FBDC</tstamp>
     </comp>
   </components>
   <libparts>
@@ -286,53 +332,6 @@
         <pin num="S" name="~" type="passive"/>
         <pin num="T" name="~" type="passive"/>
         <pin num="TN" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector" part="Screw_Terminal_01x03">
-      <description>Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>TerminalBlock*:*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Screw_Terminal_01x03</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x02">
-      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x02</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x03">
-      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x03</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="C">
@@ -474,7 +473,105 @@
         <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="ao_symbols" part="2_pin_Molex_connector">
+      <description>2 pin Molex connector 2.54 mm spacing</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">2_pin_Molex_connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ao_symbols" part="2_pin_Molex_header">
+      <description>2 pin Molex header 2.54 mm spacing</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">2_pin_Molex_header</field>
+        <field name="Footprint">Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ao_symbols" part="3_pin_Molex_connector">
+      <description>3 pin Molex connector 2.54 mm spacing</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">3_pin_Molex_connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ao_symbols" part="3_pin_Molex_header">
+      <description>3 pin Molex header 2.54 mm spacing</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">3_pin_Molex_header</field>
+        <field name="Footprint">Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ao_symbols" part="Graphic">
+      <fields>
+        <field name="Reference">GRAF</field>
+        <field name="Value">Graphic</field>
+        <field name="Config">DNF</field>
+      </fields>
+    </libpart>
+    <libpart lib="ao_symbols" part="MountingHole">
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Config">DNF</field>
+      </fields>
+    </libpart>
+    <libpart lib="ao_symbols" part="Screw_Terminal_01x03">
+      <description>Screw terminal, single row, 01x03</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="ao_symbols" part="Synth_power_2x5">
+      <description>2x5 pin shrouded header 2.54 mm spacing</description>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">Synth_power_2x5</field>
@@ -500,9 +597,6 @@
     <library logical="Connector">
       <uri>/usr/share/kicad/library/Connector.lib</uri>
     </library>
-    <library logical="Connector_Generic">
-      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
-    </library>
     <library logical="Device">
       <uri>/usr/share/kicad/library/Device.lib</uri>
     </library>
@@ -513,61 +607,73 @@
       <uri>/usr/share/kicad/library/Switch.lib</uri>
     </library>
     <library logical="ao_symbols">
-      <uri>/home/rsholmes/Documents/Hobbies/Music/Instruments/Synths/MFOS/VC LFO/Hardware/Aux PCB/MFOS_VCLFO_aux/ao_symbols.lib</uri>
+      <uri>/home/rsholmes/Documents/Hobbies/Music/Instruments/Synths/MFOS/VC LFO/Sync mod/Hardware/Aux PCB/MFOS_VCLFO_aux/ao_symbols.lib</uri>
     </library>
   </libraries>
   <nets>
     <net code="1" name="+12V">
-      <node ref="C3" pin="2"/>
-      <node ref="J8" pin="1"/>
-      <node ref="R3" pin="1"/>
       <node ref="C1" pin="1"/>
-      <node ref="J2" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="R2" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C3" pin="2"/>
       <node ref="U1" pin="7"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="D1" pin="1"/>
     </net>
     <net code="2" name="-12V">
-      <node ref="C5" pin="2"/>
+      <node ref="J2" pin="3"/>
       <node ref="C2" pin="2"/>
       <node ref="U1" pin="4"/>
-      <node ref="J8" pin="3"/>
       <node ref="D2" pin="2"/>
-      <node ref="J2" pin="3"/>
+      <node ref="C5" pin="2"/>
+      <node ref="J8" pin="3"/>
     </net>
-    <net code="3" name="Net-(D3-Pad1)">
-      <node ref="D3" pin="1"/>
-      <node ref="U1" pin="6"/>
+    <net code="3" name="GND">
+      <node ref="J1" pin="3"/>
+      <node ref="J1" pin="4"/>
+      <node ref="J2" pin="2"/>
+      <node ref="J1" pin="6"/>
+      <node ref="J1" pin="7"/>
+      <node ref="J1" pin="8"/>
+      <node ref="J1" pin="5"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="J7" pin="1"/>
     </net>
-    <net code="4" name="Net-(R1-Pad2)">
-      <node ref="R2" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="U1" pin="3"/>
+    <net code="4" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2"/>
+      <node ref="J7" pin="2"/>
     </net>
-    <net code="5" name="Net-(D3-Pad2)">
+    <net code="5" name="Net-(J5-PadT)">
+      <node ref="J5" pin="T"/>
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="6" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
       <node ref="R5" pin="1"/>
       <node ref="R3" pin="2"/>
       <node ref="Q1" pin="3"/>
-      <node ref="D3" pin="2"/>
     </net>
-    <net code="6" name="Net-(Q1-Pad2)">
-      <node ref="RV1" pin="2"/>
-      <node ref="Q1" pin="2"/>
+    <net code="7" name="Net-(Q1-Pad2)">
       <node ref="R5" pin="2"/>
+      <node ref="Q1" pin="2"/>
       <node ref="R6" pin="1"/>
       <node ref="RV1" pin="3"/>
+      <node ref="RV1" pin="2"/>
     </net>
-    <net code="7" name="Net-(J9-Pad2)">
-      <node ref="SW1" pin="2"/>
+    <net code="8" name="Net-(J5-PadS)">
+      <node ref="J5" pin="TN"/>
+      <node ref="J6" pin="1"/>
+      <node ref="J5" pin="S"/>
+    </net>
+    <net code="9" name="Net-(J9-Pad2)">
       <node ref="J9" pin="2"/>
-    </net>
-    <net code="8" name="Net-(J9-Pad3)">
-      <node ref="J9" pin="3"/>
-      <node ref="SW1" pin="3"/>
-    </net>
-    <net code="9" name="Net-(J9-Pad1)">
-      <node ref="SW1" pin="1"/>
-      <node ref="J9" pin="1"/>
+      <node ref="SW1" pin="2"/>
     </net>
     <net code="10" name="Net-(J4-Pad1)">
       <node ref="J4" pin="1"/>
@@ -576,69 +682,57 @@
       <node ref="J4" pin="2"/>
     </net>
     <net code="12" name="/PIN2">
-      <node ref="J3" pin="1"/>
       <node ref="Q1" pin="1"/>
+      <node ref="J3" pin="1"/>
     </net>
     <net code="13" name="/PIN1">
       <node ref="RV1" pin="1"/>
       <node ref="J3" pin="2"/>
     </net>
-    <net code="14" name="GND">
-      <node ref="J1" pin="5"/>
-      <node ref="R1" pin="1"/>
-      <node ref="R4" pin="2"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="J1" pin="3"/>
-      <node ref="J1" pin="4"/>
-      <node ref="J1" pin="6"/>
-      <node ref="J1" pin="7"/>
-      <node ref="J1" pin="8"/>
-      <node ref="J2" pin="2"/>
-      <node ref="J7" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="C1" pin="2"/>
-    </net>
-    <net code="15" name="Net-(C4-Pad2)">
-      <node ref="J7" pin="2"/>
-      <node ref="C4" pin="2"/>
-    </net>
-    <net code="16" name="Net-(J5-PadT)">
-      <node ref="J6" pin="2"/>
-      <node ref="J5" pin="T"/>
-    </net>
-    <net code="17" name="Net-(J5-PadS)">
-      <node ref="J5" pin="TN"/>
-      <node ref="J6" pin="1"/>
-      <node ref="J5" pin="S"/>
-    </net>
-    <net code="18" name="Net-(J8-Pad2)">
-      <node ref="R6" pin="2"/>
-      <node ref="J8" pin="2"/>
-    </net>
-    <net code="19" name="Net-(D1-Pad2)">
-      <node ref="D1" pin="2"/>
-      <node ref="J1" pin="9"/>
-      <node ref="J1" pin="10"/>
-    </net>
-    <net code="20" name="Net-(D2-Pad1)">
-      <node ref="J1" pin="1"/>
-      <node ref="D2" pin="1"/>
-      <node ref="J1" pin="2"/>
-    </net>
-    <net code="21" name="Net-(C4-Pad1)">
-      <node ref="C4" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="22" name="Net-(U1-Pad1)">
-      <node ref="U1" pin="1"/>
-    </net>
-    <net code="23" name="Net-(U1-Pad5)">
+    <net code="14" name="Net-(U1-Pad5)">
       <node ref="U1" pin="5"/>
     </net>
-    <net code="24" name="Net-(U1-Pad8)">
+    <net code="15" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="16" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad8)">
       <node ref="U1" pin="8"/>
+    </net>
+    <net code="18" name="Net-(J8-Pad2)">
+      <node ref="J8" pin="2"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="19" name="Net-(J9-Pad1)">
+      <node ref="J9" pin="1"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="20" name="Net-(J9-Pad3)">
+      <node ref="J9" pin="3"/>
+      <node ref="SW1" pin="3"/>
+    </net>
+    <net code="21" name="Net-(D1-Pad2)">
+      <node ref="J1" pin="10"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="22" name="Net-(D2-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="23" name="Net-(C4-Pad1)">
+      <node ref="U1" pin="3"/>
+      <node ref="R4" pin="1"/>
+      <node ref="C4" pin="1"/>
+    </net>
+    <net code="24" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="2"/>
     </net>
   </nets>
 </export>

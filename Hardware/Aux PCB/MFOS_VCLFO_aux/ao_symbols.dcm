@@ -24,6 +24,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP Screw_Terminal_01x03
+D Screw terminal, single row, 01x03
+K screw terminal
+F ~
+$ENDCMP
+#
 $CMP Synth_power_2x5
 D 2x5 pin shrouded header 2.54 mm spacing
 $ENDCMP
