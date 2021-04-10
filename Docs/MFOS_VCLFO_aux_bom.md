@@ -8,7 +8,7 @@ Generated from schematic by Eeschema 5.1.9-73d0e3b20d~88~ubuntu20.04.1
 
 | Refs | Qty | Component | Description | Manufacturer | Part | Vendor | SKU |
 | ----- | --- | ---- | ----------- | ---- | ---- | ---- | ---- |
-| C1, C2 | 2 | 10uF | Polarized capacitor |  |  | Tayda | A-4349 |
+| C1, C2 | 2 | 10uF | Electrolytic capacitor |  |  | Tayda | A-4349 |
 | C3, C5 | 2 | 100nF | Ceramic capacitor |  |  | Tayda | A-553 |
 | C4 | 1 | 1nF | Polyester film capacitor |  |  | Tayda | A-1531 |
 | D1, D2 | 2 | 1N5817 | Schottky diode |  |  | Tayda | A-159 |
@@ -29,3 +29,4 @@ Generated from schematic by Eeschema 5.1.9-73d0e3b20d~88~ubuntu20.04.1
 | RV1 | 1 | 500R | Trim-potentiometer | Alpha | 3296W | Tayda | A-596 |
 | SW1 | 1 | SW_SPDT | Switch, single pole double throw |  |  | Tayda | A-3186 |
 | U1 | 1 | TL071 | Single Low-Noise JFET-Input Operational Amplifiers, DIP-8 |  |  | Tayda | A-1135 |
+| | 1 | | 8 pin DIP socket | | | | 
