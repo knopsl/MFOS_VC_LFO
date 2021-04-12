@@ -16,15 +16,15 @@ As designed, the MFOS LFO has some undesireable behavior with the pulse width. T
 
 I recommend the following changes:
 
-* R37 (pulse width pot) from 100k to 20k
+* R37 (pulse width pot) from 100k to 25k
 * R36 and R42 (fixed resistors at ends of R37) from 100k to 3.3k
-* R58 and R59 from 10k to 200k
+* R58 and R59 (summing resistors) from 10k to 200k
 
 With these changes I find the effects of the PW pot on the PW CV attenuator and vice versa are negligible, and I get a pulse width range from the knob (with no CV) of about 7% to 91%. 
 
 ## Front panel
 
-A Kosmo format front panel is also provided. It includes space for the attenuator pots for the FM 1 and PWM control voltages. Use 100k for FM 1 CV and 20k for PWM CV. Width is 10 cm.
+A Kosmo format front panel is also provided. It includes space for the attenuator pots for the FM 1 and PWM control voltages. Use 100k for FM 1 CV and 25k for PWM CV. Width is 10 cm.
 
 ![Auxiliary PCB](Docs/MFOS_VCLFO_aux.png  "Auxiliary PCB")
 ![Kosmo front panel](Hardware/Panel/mfos_vclfo_panel.png  "Kosmo front panel")
