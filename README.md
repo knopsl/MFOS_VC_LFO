@@ -24,7 +24,7 @@ With these changes I find the effects of the PW pot on the PW CV attenuator and 
 
 ## Front panel
 
-A Kosmo format front panel is also provided. It includes space for the attenuator pots for the FM 1 and PWM control voltages. Use 100k for FM 1 CV and 25k for PWM CV. Width is 10 cm.
+A Kosmo format front panel is also provided. It includes space for the attenuator pots for the FM 1 and PWM control voltages. Use 100k for FM 1 CV and 25k for PWM CV. See [wiring diagram](Images/panel_wiring.pdf)  for how to connect attenuators to CV inputs and PCB. Width is 10 cm.
 
 ![Auxiliary PCB](Docs/MFOS_VCLFO_aux.png  "Auxiliary PCB")
 ![Kosmo front panel](Hardware/Panel/mfos_vclfo_panel.png  "Kosmo front panel")
