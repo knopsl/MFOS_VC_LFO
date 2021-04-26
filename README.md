@@ -8,7 +8,7 @@ The auxiliary board adds a sync input. A rising edge on this input resets the LF
 
 This modification is based on Tim Parkhurst's [sync mod](https://electro-music.com/forum/post-387749.html#387749).  I added a switch to select whether to charge the triangle core to its maximum or minimum value, affecting where in each waveform sync occurs. Resistances were changed to accommodate the MFOS LFO's larger integrating capacitor, and I used J113 for the JFET instead of 2N3819. 2N5458 was also found to work, J112 did not. One resistor was made a trimmer to allow tuning the voltage to which the oscillator resets. It should be adjusted until the triangle wave is at its maximum or minimum immediately after syncing.
 
-The auxiliary board also has footprints for a Eurorack style power header with reversal protection diodes and bypass capacitors (which should be mounted there instead on on the MFOS board, where they are C2 and C6) and a terminal block. Wires from the terminal block connect to ±12 V and ground on the MFOS board. Wires from a 2-pin Molex connector connect to U2-A pins 1 and 2 on the MFOS board. Panel controls (SYNC IN jack and SYNC +/- switch) connect to the auxiliary board via Molex connectors. See labels on the PCB to identify what connects where.
+The auxiliary board also has footprints for a Eurorack style power header with reversal protection diodes and bypass capacitors (which should be mounted there instead of on the MFOS board) and a terminal block. Wires from the terminal block connect to ±12 V and ground on the MFOS board. Molex connectors are used to connect the sync mod to the panel controls and PCB.
 
 ## Pulse width fixes
 
@@ -24,7 +24,13 @@ With these changes I find the effects of the PW pot on the PW CV attenuator and 
 
 ## Front panel
 
-A Kosmo format front panel is also provided. It includes space for the attenuator pots for the FM 1 and PWM control voltages. Use 100k for FM 1 CV and 25k for PWM CV. See [wiring diagram](Images/panel_wiring.pdf)  for how to connect attenuators to CV inputs and PCB. Width is 10 cm.
+A Kosmo format front panel is also provided. It includes space for the attenuator pots for the FM 1 and PWM control voltages. Width is 10 cm.
+
+## Sync mod documentation
+
+* [Build notes](Docs/build_notes.md) 
+* [BOM](Docs/MFOS_VCLFO_aux.pdf) (See above for changes to the main PCB BOM.)
+* [Schematics](Docs/build_notes.md) 
 
 ![Auxiliary PCB](Docs/MFOS_VCLFO_aux.png  "Auxiliary PCB")
-![Kosmo front panel](Hardware/Panel/mfos_vclfo_panel.png  "Kosmo front panel")
+![Kosmo front panel](Images/mfos_vclfo_panel.png  "Kosmo front panel")
