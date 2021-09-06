@@ -30,7 +30,7 @@ A Kosmo format front panel is also provided. It includes space for the attenuato
 
 * [Build notes](Docs/build_notes.md) 
 * [BOM](Docs/MFOS_VCLFO_aux.pdf) (See above for changes to the main PCB BOM.)
-* [Schematics](Docs/build_notes.md) 
+* [Schematics](Docs/MFOS_VCLFO_aux.pdf) 
 
 ![Auxiliary PCB](Docs/MFOS_VCLFO_aux.png  "Auxiliary PCB")
 ![Kosmo front panel](Images/mfos_vclfo_panel.png  "Kosmo front panel")
